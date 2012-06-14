@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="data_update_URL">http://www.gemapp.org/TexstoneServer/device/getUpdateData.action?deviceDataVersionId=%1$s</string>
+
+	<integer name="initial_data_update_check_time_minute">1</integer>
+	<integer name="next_data_update_check_time_minute">1440</integer>
+	
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/page_background">
+    
+ 	<ImageView
+      android:layout_alignParentTop="true"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"
+      android:src="@drawable/header_img"
+      android:id="@+id/mainLogo"
+      android:scaleType="fitXY"
+      />
+  
+ 	<LinearLayout
+ 	    android:id="@+id/fixedButtonPanel"
+ 	    android:layout_below="@id/mainLogo"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="40dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+ 	    <LinearLayout android:layout_height="wrap_content"
+ 	                android:layout_weight="1"
+ 	            	android:layout_width="0dp"
+ 	            	android:gravity="center">
+ 	        <Button android:background="@drawable/button_new_arrival"
+ 	            	android:layout_height="wrap_content"
+ 	            	android:layout_width="wrap_content"
+ 	            	android:onClick="newArrivalButtonClicked"
+ 	            	android:soundEffectsEnabled="false"/>
+ 	    </LinearLayout>
+
+
+ 	    <LinearLayout android:layout_height="wrap_content"
+ 	                android:layout_weight="1"
+ 	            	android:layout_width="0dp"
+ 	            	android:gravity="center">
+ 	        <Button android:background="@drawable/button_favorite_list"
+ 	            	android:layout_height="wrap_content"
+ 	            	android:layout_width="wrap_content"
+ 	            	android:onClick="favoriteButtonClicked"
+ 	            	android:soundEffectsEnabled="false"/>
+ 	    </LinearLayout>
+
+ 	        
+	</LinearLayout>
+
+  
+
+	<RelativeLayout
+	    android:layout_below="@id/fixedButtonPanel"
+	    android:layout_marginBottom="50dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+
+		<LinearLayout
+		    android:layout_centerInParent="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:id="@+id/loadingView">
+		    <ProgressBar
+		         android:layout_width="30dp"
+		         android:layout_height="30dp"/>
+		    <TextView android:layout_width="wrap_content"
+		         android:layout_height="30dp"
+		         android:gravity="center_vertical"
+		         android:layout_marginLeft="10dp"
+		         android:text="読み込み中"/>
+	   </LinearLayout>
+	   
+		<LinearLayout android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:orientation="horizontal"
+		    android:layout_alignParentTop="true"
+		    android:id="@+id/categoryPanelUpper">
+		    
+		 	    <LinearLayout android:layout_height="wrap_content"
+		 	                android:layout_weight="1"
+		 	            	android:layout_width="0dp"
+		 	            	android:gravity="center">
+		 	        <Button android:background="@drawable/button_category1"
+		 	            	android:layout_height="wrap_content"
+		 	            	android:layout_width="wrap_content"
+		 	            	android:tag="1"
+		 	            	android:onClick="categoryButtonClicked"
+		 	            	android:soundEffectsEnabled="false"/>
+		 	    </LinearLayout>
+		 	    
+		 	    <LinearLayout android:layout_height="wrap_content"
+		 	                android:layout_weight="1"
+		 	            	android:layout_width="0dp"
+		 	            	android:gravity="center">
+		 	        <Button android:background="@drawable/button_category2"
+		 	            	android:layout_height="wrap_content"
+		 	            	android:layout_width="wrap_content"
+		 	            	android:tag="2"
+		 	            	android:onClick="categoryButtonClicked"
+		 	            	android:soundEffectsEnabled="false"/>
+		 	    </LinearLayout>
+		
+		 	        
+		 	    <LinearLayout android:layout_height="wrap_content"
+		 	                android:layout_weight="1"
+		 	            	android:layout_width="0dp"
+		 	            	android:gravity="center">
+		 	        <Button android:background="@drawable/button_category3"
+		 	            	android:layout_height="wrap_content"
+		 	            	android:layout_width="wrap_content"
+		 	            	android:tag="3"
+		 	            	android:onClick="categoryButtonClicked"
+		 	            	android:soundEffectsEnabled="false"/>
+		 	    </LinearLayout>
+		    
+		</LinearLayout>			    
+	    
+
+
+		<LinearLayout android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:orientation="horizontal"
+		    android:layout_below="@id/categoryPanelUpper"
+		    android:id="@+id/categoryPanelLower">
+		    
+		 	    <LinearLayout android:layout_height="wrap_content"
+		 	                android:layout_weight="1"
+		 	            	android:layout_width="0dp"
+		 	            	android:gravity="center">
+		 	        <Button android:background="@drawable/button_category4"
+		 	            	android:layout_height="wrap_content"
+		 	            	android:layout_width="wrap_content"
+		 	            	android:tag="4"
+		 	            	android:onClick="categoryButtonClicked"
+		 	            	android:soundEffectsEnabled="false"/>
+		 	    </LinearLayout>
+		 	    
+		 	    <LinearLayout android:layout_height="wrap_content"
+		 	                android:layout_weight="1"
+		 	            	android:layout_width="0dp"
+		 	            	android:gravity="center">
+		 	        <Button android:background="@drawable/button_category5"
+		 	            	android:layout_height="wrap_content"
+		 	            	android:layout_width="wrap_content"
+		 	            	android:tag="5"
+		 	            	android:onClick="categoryButtonClicked"
+		 	            	android:soundEffectsEnabled="false"/>
+		 	    </LinearLayout>
+		
+		 	        
+		 	    <LinearLayout android:layout_height="wrap_content"
+		 	                android:layout_weight="1"
+		 	            	android:layout_width="0dp"
+		 	            	android:gravity="center">
+		 	        <Button android:background="@drawable/button_category6"
+		 	            	android:layout_height="wrap_content"
+		 	            	android:layout_width="wrap_content"
+		 	            	android:tag="6"
+		 	            	android:onClick="categoryButtonClicked"
+		 	            	android:soundEffectsEnabled="false"/>
+		 	    </LinearLayout>
+		    
+		</LinearLayout>
+ 	    
+ 	        
+ 	    
+ 	        
+ 	        
+	    
+	</RelativeLayout>
+	
+<!--   <jp.Adlantis.Android.AdlantisView
+      android:id="@+id/adView"  
+      android:layout_width="fill_parent" 
+      android:layout_height="50dp"
+      android:gravity="center"
+      android:layout_alignParentBottom="true"
+      /> -->
+  
+	 <com.adwhirl.AdWhirlLayout 
+	     android:id="@+id/adWhirlLayout"
+		 android:layout_width="fill_parent"
+		 android:layout_height="50dp"
+	     android:gravity="center"
+	     android:layout_alignParentBottom="true"
+		 />
+
+
+</RelativeLayout>

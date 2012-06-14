@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">懐かしい人物の集まる喫茶店</string>
+    <string name="favorite_added">お気に入りに設定しました</string>
+    <string name="favorite_removed">お気に入り設定を解除しました</string>
+    <string name="new_arrival_empty">新着情報はありません。</string>
+    <string name="favorite_empty">お気に入りは未登録です。</string>
+	<string name="sample_article_body">150.6\nYadav to Haddin, no run, shuffles across and gets an inside edge off pad towards point\n150.5\nYadav to Haddin, no run, looks to pull one going down leg, misses\n150.4\nYadav to Haddin, no run, moving in a shade in the air, pushed back solidly to the bowler\n150.3\nYadav to Harris, 1 run, pushes a back of a length ball to sweeper cover\n150.2\nYadav to Haddin, 1 run, swings a pitched up delivery hard, to deep midwicket\n150.1\nYadav to Haddin, no run, goes for the yorker first up, not quite full enough, patted away on the leg side\nFinal session on day two to begin, how far is the declaration?</string>
+	
+</resources>

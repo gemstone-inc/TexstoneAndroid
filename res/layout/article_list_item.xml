@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:soundEffectsEnabled="false">
+    
+  <TextView
+      android:layout_alignParentLeft="true"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:paddingLeft="2dp"
+      android:id="@+id/articleTitle"
+      android:layout_width="fill_parent" 
+      android:layout_height="fill_parent"
+      android:text="公園のブランコの想い出"
+      android:textSize="20sp"
+      android:textColor="#FFFFFF"
+      android:gravity="center_vertical|left"
+      android:focusable="false"
+      android:focusableInTouchMode="false"
+      android:soundEffectsEnabled="false"
+      />
+
+
+  <ToggleButton
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="4dp"
+      android:layout_width="40dp" 
+      android:layout_height="36dp"
+      android:textOn=""
+      android:textOff=""
+      android:background="@drawable/button_favorite"
+      android:id="@+id/favoriteButton"
+      android:layout_centerVertical="true"
+      android:focusable="false"
+      android:focusableInTouchMode="false"
+      android:soundEffectsEnabled="false"
+      />
+  
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:visibility="invisible"
+      android:src="@drawable/new_box"
+      android:layout_toLeftOf="@id/favoriteButton"
+      android:id="@+id/newArrivalIcon"
+      android:layout_marginRight="6dp"/>
+  
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:soundEffectsEnabled="false"
+    android:background="@drawable/page_background"
+    >
+    
+
+  	<RelativeLayout
+	    android:layout_marginBottom="100dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+
+		<LinearLayout
+		    android:layout_centerInParent="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:id="@+id/loadingView">
+		    <ProgressBar
+		         android:layout_width="30dp"
+		         android:layout_height="30dp"/>
+		    <TextView android:layout_width="wrap_content"
+		         android:layout_height="30dp"
+		         android:gravity="center_vertical"
+		         android:layout_marginLeft="10dp"
+		         android:text="読み込み中"/>
+	   </LinearLayout>
+	    
+	
+	    <ListView android:id="@android:id/list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginLeft="0dp"
+	        android:layout_marginRight="0dp"
+	        android:gravity="center_horizontal|center"
+	        android:layout_gravity="center_horizontal|center"
+	        android:transcriptMode="alwaysScroll"
+	        android:layout_weight="1"
+	        android:cacheColorHint="#00000000"
+	        android:divider="@android:color/white"
+	        android:dividerHeight="1px"
+	        android:soundEffectsEnabled="false"
+	        />
+	    <TextView
+	        android:id="@+id/emptyListView"
+	        android:visibility="invisible"
+	        android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:text="該当するデータは存在しません。"
+            android:textColor="@android:color/white" />
+	    
+	</RelativeLayout>
+	
+  	<RelativeLayout
+		android:layout_above="@id/adWhirlLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:gravity="center_vertical"
+	    android:background="@drawable/footer_background">
+	    
+  	    <Button android:onClick="backButtonClicked"
+  	        android:text="戻る"
+  	        android:layout_alignParentLeft="true"
+  	        android:layout_centerVertical="true"
+  	        android:layout_marginLeft="10dp"
+  	        android:layout_width="80dp"
+  	        android:layout_height="40dp"
+  	        android:textColor="#FFFFFF"
+  	        android:background="@drawable/button_nav"
+  	        android:soundEffectsEnabled="false"/>
+  	    
+  	    <Button android:onClick="updateButtonClicked"
+  	        android:id="@+id/updateButton"
+  	        android:src="@drawable/next_button"
+  	        android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+  	        android:layout_width="40dp"
+  	        android:layout_height="40dp"
+  	        android:background="@drawable/reload"
+  	        android:soundEffectsEnabled="false"/>
+  	    
+  	    <ProgressBar android:id="@+id/updateProgressBar"
+  	        android:indeterminate="true"
+  	        android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"
+			android:layout_marginLeft="10dp"
+  	        android:layout_width="40dp"
+  	        android:layout_height="40dp"
+  	        android:soundEffectsEnabled="false"/>
+  	    
+  	    
+  	    
+	</RelativeLayout>
+  
+<!--   <jp.Adlantis.Android.AdlantisView
+      android:id="@+id/adView"  
+      android:layout_width="fill_parent" 
+      android:layout_height="50dp"
+      android:gravity="center"
+      android:layout_alignParentBottom="true"
+      />
+ -->
+ 
+ <com.adwhirl.AdWhirlLayout 
+     android:id="@+id/adWhirlLayout"
+	 android:layout_width="fill_parent"
+	 android:layout_height="50dp"
+     android:gravity="center"
+     android:layout_alignParentBottom="true"
+	 />
+ 
+
+</RelativeLayout>
